@@ -1,0 +1,32 @@
+# Ignore specific files in Cpp_fiducial_object
+Cpp__fiducial_object/.*       # Ignore hidden files (dotfiles)
+Cpp__fiducial_object/build*/  # Ignore build directories
+Cpp__fiducial_object/CMakeLists.txt.user*  # User-specific CMake files
+Cpp__fiducial_object/config.* # Configuration files
+
+# Ignore specific files in Godot_Markie
+Godot__Markie/.*              # Ignore hidden files (dotfiles)
+
+# Ignore Godot-specific files/folders
+Godot__Markie/.import/        # Godot import folder
+Godot__Markie/.godot/          # Godot project settings folder
+Godot__Markie/export/          # Export templates and settings
+Godot__Markie/*.import        # Godot import files
+
+# Ignore CMake build artifacts
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+*.user
+*.log
+
+# Ignore IDE-specific files
+.idea/                        # For JetBrains IDEs
+.vscode/                      # For Visual Studio Code
+
+# Ignore temporary files and logs
+*.log
+
+# Ignore other resources
+._*

@@ -1,0 +1,1 @@
+./inputDevice .../DATA/big_dodec_calib/calib/cameraCalibration.yml 0.05 .../DATA//big_dodec_calib/map.yml -detectionMode=2 -inputVideo=live:0
