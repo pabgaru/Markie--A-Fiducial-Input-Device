@@ -67,29 +67,53 @@ User ─▶ Fiducial Object ─▶ Camera Capture ─▶ Pose Estimation (C++ / 
 
 ### Setup
 
+#### 1. Clone the Repository
+
+First, clone the project and navigate into the directory:
+
 ```bash
-git clone https://github.com/<your-username>/FiducialObjectVirtualLab.git
-cd FiducialObjectVirtualLab
+git clone https://github.com/pabgaru/Markie--A-Fiducial-Input-Device.git
+cd Markie--A-Fiducial-Input-Device
+```
+
+#### 2. Build the ```inputDevice``` utility
+
+Before proceeding, make sure you have:
+- A working OpenCV installation (required).
+- Qt is not required for running Markie.
+
+To build the C++ utility (```inputDevice```):
+
+```bash
+cd Cpp__fiducial_object
 mkdir build && cd build
 cmake ..
 make
 ```
 
-To launch the interactive scene:
+This will generate the ```inputDevice``` executable used for a fiducial tracking.
+
+
+#### 3. Run the Godot Project
+
+You need to have **Godot Engine version 4.3** installed. Then, run the Godot project:
 
 ```bash
-godot4 -e project.godot
+godot4 --path Godot__Markie
 ```
+
+Alternatively, you can open ```Godot__Markie``` manually through the Godot editor UI.
 
 ---
 
 ## 🧩 Usage
 
-1. Print or create any fiducial object.
-2. Run the main executable to start tracking via webcam.
-3. Open the Godot interface to view the virtual environment.
-4. Move or rotate the fiducial object to trigger actions in real time.
-5. Interact with **Markie**, the avatar, for voice or text guidance.
+1. **Print or create** any fiducial object.
+2. **Run** the developer utility ```inputDevice``` to start tracking via webcam.
+3. **Open** the Godot editor with the project ```Godot__Markie``` to view the virtual environment.
+4. **Run** the main scene inside the Godot project.
+5. **Move or rotate** the fiducial object to trigger actions in real time.
+6. **Engage with Markie**, the avatar, for voice or text guidance.
 
 ---
 
